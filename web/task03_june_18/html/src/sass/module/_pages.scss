@@ -1,0 +1,377 @@
+$headingColor: #333;
+$pColor: #777;
+$h4Color: #262626;
+$borderTop: #DEDEDE;
+$ease: all 0.3s ease;
+
+#ftHome {
+  width: 100%;
+  max-width: 100%;
+  background: $white;
+  font-family: Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: $pColor;
+  line-height: normal;
+  position: relative;
+  letter-spacing: normal;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-backface-visibility: hidden;
+  overflow-x: hidden;
+  clear: both;
+  margin-top: -50px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  h2 {
+    font-size: 38px;
+    color: $headingColor;
+    margin-bottom: 5px;
+  }
+
+  h3 {
+    font-size: 20px;
+    color: $headingColor;
+    margin-bottom: 10px;
+  }
+
+  h4 {
+    font-size: 18px;
+    color: $h4Color;
+  }
+
+  .cta {
+    font-size: 18px;
+    color: $white;
+    text-align: center;
+    background-color: $red;
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    transition: $ease;
+
+    &:hover {
+      text-decoration: none;
+      background-color: darken($color: $red, $amount: 10%);
+      transition: $ease;
+    }
+  }
+
+  .container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 135px;
+  }
+
+  .textAlignCenter {
+    text-align: center;
+  }
+
+  .introContent {
+    text-align: center;
+    margin-bottom: 30px;
+
+    .img {
+      max-width: 92px;
+      width: 100%;
+      margin: 0 auto 20px;
+      // position: relative;
+      // top: -50px;
+    }
+  }
+
+  .stepContent {
+    padding: 20px 0;
+    border-top: 1px solid $borderTop;
+
+    .container {
+      @include clearfix;
+
+      >* {
+        float: left;
+      }
+    }
+
+    .leftContent {
+      padding-right: 60px;
+      width: calc(100% - 300px);
+      // width: 100%;
+    }
+
+    .rightContent {
+      width: 300px;
+      padding-top: 30px;
+
+      .iframeWrap {
+        width: 100%;
+        height: 520px;
+        padding-top: 20px;
+
+        iframe {
+          width: 100%;
+          height: 100%;
+          border: none;
+        }
+      }
+    }
+
+    .stepItem {
+      margin-bottom: 30px;
+      font-size: 0;
+
+      >* {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      h4 {
+        width: calc(100% - 110px);
+        line-height: 24px;
+      }
+    }
+
+    .itemImg {
+      max-width: 80px;
+      width: 100%;
+      margin-right: 30px;
+    }
+  }
+
+  .tableContent {
+    padding: 30px 0;
+    background: url('../images/tableBg.png') no-repeat center / cover;
+    font-size: 18px;
+    line-height: 24px;
+
+    .tableWrap {
+      @include clearfix;
+      margin-left: -5px;
+      margin-right: -5px;
+      margin-bottom: 20px;
+
+      >* {
+        width: 50%;
+        float: left;
+      }
+
+      p {
+        color: $white;
+        font-size: 18px;
+      }
+
+      .tableCopy {
+        padding: 0 5px;
+      }
+    }
+
+    .tableTop {
+
+      .tableCopy {
+
+        &:first-child {
+          padding-right: 15px;
+        }
+      }
+    }
+
+    .tableBottom {
+      margin-bottom: 40px;
+
+      .tableCopy {
+        width: 25%;
+      }
+
+      .tableCopyInner {
+        padding: 15px;
+        background: transparentize($color: #D8D8D8, $amount: 0.25);
+        min-height: 142px;
+      }
+
+      h5 {
+        color: $red;
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: bold;
+      }
+
+      p {
+        color: $h4Color;
+      }
+    }
+
+    .tableValue {
+      width: 100%;
+      border: 0;
+      text-align: center;
+      color: $h4Color;
+
+      th {
+        color: $red;
+        border-bottom: 2px solid $red;
+      }
+
+      th,
+      td {
+        font-weight: normal;
+        border-right: 1px solid #6C6C6C;
+        padding: 15px;
+        background: transparentize($color: #D8D8D8, $amount: 0.25);
+
+        &:first-child {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .investContent {
+    padding: 30px 0;
+    text-align: center;
+
+    h3 {
+      color: $red;
+      text-align: left;
+
+      &.titleGrey {
+        color: $h4Color;
+        text-align: center;
+      }
+    }
+
+    .line {
+      display: block;
+      margin: 10px auto 20px;
+      border-top: 1px solid $borderTop;
+    }
+
+    p {
+      color: $h4Color;
+    }
+
+    .cta {
+      max-width: 350px;
+      width: 100%;
+    }
+  }
+
+  .investStepWrap {
+    text-align: left;
+    @include clearfix;
+    padding-bottom: 40px;
+
+    .investStep {
+      float: left;
+      padding-top: 30px;
+
+      &.investStepLeft {
+        width: 280px;
+      }
+
+      &.investStepRight {
+        width: calc(100% - 280px);
+        padding-left: 60px;
+      }
+    }
+
+    .stepTagLine {
+      border: 1px solid $red;
+      border-radius: 4px;
+      padding: 5px 15px;
+      text-align: center;
+      display: inline-block;
+      color: $red;
+      margin-bottom: 10px;
+    }
+
+    .investImg {
+      max-width: 280px;
+      width: 100%;
+    }
+
+    .investStepRight {
+
+      .investImg {
+        max-width: 240px;
+        width: auto;
+      }
+
+      .investCopy {
+        @include clearfix;
+
+        >* {
+          float: left;
+        }
+      }
+    }
+
+    .detailStepWrap {
+      width: calc(100% - 240px);
+
+      padding-left: 15px;
+    }
+
+    .detailStep {
+      @include clearfix;
+
+      &:first-child {
+        padding-bottom: 60px;
+      }
+
+      >* {
+        float: left;
+      }
+    }
+
+    .detailImg {
+      max-width: 48px;
+      // width: 100%;
+    }
+
+    .detailCopy {
+      width: calc(100% - 48px);
+      padding-left: 15px;
+    }
+  }
+
+  .investKv {
+    max-width: 365px;
+    width: 100%;
+    margin: 0 auto 20px;
+  }
+
+  .investContact {
+    font-size: 0;
+    margin: 20px auto 30px;
+    width: 75%;
+
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      width: 33%;
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      font-size: 20px;
+      line-height: 24px;
+
+      > * {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+
+    img {
+      max-width: 24px;
+      margin-right: 5px;
+    }
+  }
+}

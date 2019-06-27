@@ -1,0 +1,14 @@
+*.DS_Store
+web/default_template/
+web/task02_june_05/design/
+*design/
+node_modules/
+*libs/
+*debug/
+gulpfile.js
+package-lock.json
+package.json
+assets/
+fonts/
+ttf-fonts/
+*.zip

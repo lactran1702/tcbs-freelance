@@ -1,0 +1,1 @@
+var ftHome={init:function(){console.log("<ftHome> => INIT!"),$(window).on("resize",ftHome.onResize),ftHome.onResize()},onResize:function(n){console.log("Browser size: "+window.innerWidth+"x"+window.innerHeight)},galleryInit:function(){}};
